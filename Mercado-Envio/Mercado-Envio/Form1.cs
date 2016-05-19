@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Mercado_Envio.Rol;
 
 namespace Mercado_Envio
 {
@@ -21,5 +22,10 @@ namespace Mercado_Envio
 
         }
 
+        private void Roles_Click(object sender, EventArgs e)
+        {
+            rolForm rolform = new rolForm();
+            rolform.Show();
+        }
     }
 }

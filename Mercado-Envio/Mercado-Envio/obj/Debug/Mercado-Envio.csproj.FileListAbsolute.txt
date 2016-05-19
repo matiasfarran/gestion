@@ -5,3 +5,11 @@ C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mer
 C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csproj.GenerateResource.Cache
 C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.exe
 C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.pdb
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.exe
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.pdb
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Form1.resources
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Properties.Resources.resources
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Rol.rolForm.resources
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csproj.GenerateResource.Cache
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.exe
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.pdb
