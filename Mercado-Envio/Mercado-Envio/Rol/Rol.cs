@@ -17,5 +17,14 @@ namespace Mercado_Envio.Rol
             this.nombre = nombre;
             this.habilitado = habilitado;
         } 
+        public string todo
+        {
+            get
+            {
+                string resu = "";
+                resu = "Nom:" + this.nombre + "_ID:" + this.id + "_Activo:" + this.habilitado;
+                return resu;
+            }
+        }
     }
 }

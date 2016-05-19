@@ -25,16 +25,31 @@ namespace Mercado_Envio.Rol
             foreach(DataRow rol in )
                 
         }*/
-        public List<Rol> GetAll(bool isActive)
+        public void WriteRol(Rol rolToSet)
         {
            
             #region Query
-            string Query = "SELECT * FROM Rol WHERE rol_habilitado = @isActive";
+            string Query = "UPDATE Rol Set rol_nombre=@nombre, rol_habilitado=@habilitado where rol_id=@id";
             #endregion
 
-            SqlParameter[] param = new SqlParameter[1];
-            param[0] = access.CreateParameter("@isActive", isActive);
-            DataTable table = access.Read(Query, param);
+            SqlParameter[] param = new SqlParameter[3];
+            param[0] = access.CreateParameter("@nombre", rolToSet.nombre);
+            param[1] = access.CreateParameter("@habilitado", rolToSet.habilitado);
+            param[2] = access.CreateParameter("@id", rolToSet.id);
+            access.Write(Query, param);
+
+        }
+    
+        public List<Rol> GetAll()
+        {
+           
+            #region Query
+            string Query = "SELECT * FROM Rol";
+            #endregion
+
+            //SqlParameter[] param = new SqlParameter[1];
+            //param[0] = access.CreateParameter("@isActive", isActive);
+            DataTable table = access.Read(Query);
             List<Rol> lstRol = new List<Rol>();
             foreach (DataRow rol in table.Rows)
             {
