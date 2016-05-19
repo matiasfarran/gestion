@@ -1,0 +1,7 @@
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.exe
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.pdb
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csprojResolveAssemblyReference.cache
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Properties.Resources.resources
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csproj.GenerateResource.Cache
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.exe
+C:\Users\mferran\Documents\gdd\proyect\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.pdb
