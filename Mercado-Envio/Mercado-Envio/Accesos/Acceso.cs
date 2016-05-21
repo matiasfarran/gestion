@@ -26,11 +26,7 @@ namespace Mercado_Envio.Accesos
         {
             get
             {
-                if (instance == null)
-                {
-                    instance = new Access();
-                }
-                return instance;
+                return instance ?? new Access();
             }
         }
 
@@ -38,75 +34,49 @@ namespace Mercado_Envio.Accesos
 
         private void Open()
         {
-            try
-            {
-                cnn = new SqlConnection(connectionString);
-                cnn.Open();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
         }
 
         private void Close()
-        {
-            try
-            {
-                cnn.Close();
-                cnn = null;
-                GC.Collect();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+        {   
+            cnn.Close();
+            cnn.Dispose(); //Usar dispose, no llamar al GarbageCollector
+            cnn = null;
         }
 
         #endregion
 
         #region Method Access
 
-        public DataTable Read(string store, SqlParameter[] param = null)
+        public DataTable Read(string store, params SqlParameter[] parameters)
         {
             DataTable tabla = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter();
             Open();
-            adapter.SelectCommand = new SqlCommand();
-            adapter.SelectCommand.CommandText = store;
+            adapter.SelectCommand = new SqlCommand(store,cnn);
             adapter.SelectCommand.CommandType = CommandType.Text;
-            if (param != null)
-            {
-                adapter.SelectCommand.Parameters.AddRange(param);
-            }
-            adapter.SelectCommand.Connection = cnn;
+            adapter.SelectCommand.Parameters.AddRange(parameters);
             adapter.Fill(tabla);
             Close();
             return tabla;
         }
 
-        public int Write(string store, SqlParameter[] param)
+        public void Write(string store, params SqlParameter[] param)
         {
-            int retorno;
-            SqlCommand command = new SqlCommand();
             Open();
-            command.CommandText = store;
+            SqlCommand command = new SqlCommand(store, cnn, tx = cnn.BeginTransaction());
             command.CommandType = CommandType.Text;
-            command.Connection = cnn;
             command.Parameters.AddRange(param);
-            tx = cnn.BeginTransaction();
-            command.Transaction = tx;
             try
             {
-                retorno = command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
                 tx.Commit();
-                return retorno;
             }
             catch (Exception ex)
             {
-                retorno = -1;
                 tx.Rollback();
-                return retorno;
+                throw ex;
             }
             finally
             {
@@ -149,7 +119,13 @@ namespace Mercado_Envio.Accesos
         public SqlParameter CreateParameter(string name, Double value)
         {
             SqlParameter param = new SqlParameter(name, value);
-            param.SqlDbType = SqlDbType.Date;
+            param.SqlDbType = SqlDbType.Float;
+            return param;
+        }
+
+        public SqlParameter CreateParameter(String name, Decimal value) {
+            SqlParameter param = new SqlParameter(name, value);
+            param.SqlDbType = SqlDbType.Decimal;
             return param;
         }
         #endregion

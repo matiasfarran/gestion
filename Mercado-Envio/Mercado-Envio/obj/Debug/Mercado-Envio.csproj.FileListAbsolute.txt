@@ -13,3 +13,12 @@ C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_E
 C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csproj.GenerateResource.Cache
 C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.exe
 C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.pdb
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csprojResolveAssemblyReference.cache
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Login.resources
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Properties.Resources.resources
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_Envio.Rol.rolForm.resources
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csproj.GenerateResource.Cache
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.exe
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.pdb
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.exe
+C:\Users\pentester\Documents\Visual Studio 2012\Projects\gestion-master\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.pdb
