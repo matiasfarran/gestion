@@ -27,17 +27,31 @@ namespace Mercado_Envio.Rol
         }*/
         public void WriteRol(Rol rolToSet)
         {
-           
-            #region Query
-            string Query = "UPDATE Rol Set rol_nombre=@nombre, rol_habilitado=@habilitado where rol_id=@id";
-            #endregion
+            if (rolToSet.id != 0)
+            {
+                #region Query
+                string Query = "UPDATE Rol Set rol_nombre=@nombre, rol_habilitado=@habilitado where rol_id=@id";
+                #endregion
 
-            SqlParameter[] param = new SqlParameter[3];
-            param[0] = access.CreateParameter("@nombre", rolToSet.nombre);
-            param[1] = access.CreateParameter("@habilitado", rolToSet.habilitado);
-            param[2] = access.CreateParameter("@id", rolToSet.id);
-            access.Write(Query, param);
+                SqlParameter[] param = new SqlParameter[3];
+                param[0] = access.CreateParameter("@nombre", rolToSet.nombre);
+                param[1] = access.CreateParameter("@habilitado", rolToSet.habilitado);
+                param[2] = access.CreateParameter("@id", rolToSet.id);
+                access.Write(Query, param);
+                return;
+            }
+            else
+            {
+                #region Query
+                string Query = "INSERT INTO Rol VALUES (@nombre,@habilitado)";
+                #endregion
 
+                SqlParameter[] param = new SqlParameter[2];
+                param[0] = access.CreateParameter("@nombre", rolToSet.nombre);
+                param[1] = access.CreateParameter("@habilitado", rolToSet.habilitado);
+                access.Write(Query, param);
+                return;
+            }
         }
     
         public List<Rol> GetAll()

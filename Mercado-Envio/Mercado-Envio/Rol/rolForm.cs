@@ -42,7 +42,16 @@ namespace Mercado_Envio.Rol
         private void button3_Click(object sender, EventArgs e)
         {
             RolService rolservice = new RolService();
-            Rol CurrentRol = new Rol(Int32.Parse(textBox2.Text), textBox1.Text,checkBox1.Checked);
+
+            string id = textBox2.Text;
+            int idInt = 0;
+            if (!string.IsNullOrEmpty(id))
+            {
+                idInt = Int32.Parse(textBox2.Text);
+
+            }
+           
+            Rol CurrentRol = new Rol(idInt, textBox1.Text,checkBox1.Checked);
             rolservice.WriteRol(CurrentRol);
             cargarForm();
         }

@@ -13,3 +13,4 @@ C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado_E
 C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csproj.GenerateResource.Cache
 C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.exe
 C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\bin\Debug\Mercado-Envio.pdb
+C:\Users\mferran\gestion\gestion\Mercado-Envio\Mercado-Envio\obj\Debug\Mercado-Envio.csprojResolveAssemblyReference.cache
